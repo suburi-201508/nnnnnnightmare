@@ -13,18 +13,21 @@ nightmare
   .viewport(VIEWPORT_W, VIEWPORT_H)
   .goto(URL)
   .wait(2000)
-  .screenshot('./hoge.png')
   .evaluate(function(cssSelectorString) {
       width = document.querySelector(cssSelectorString).clientWidth;
       height = document.querySelector(cssSelectorString).clientHeight;
+      rect = document.querySelector(cssSelectorString).getBoundingClientRect();
 
       result = {
         width: width,
-        height: height
+        height: height,
+        xPosition: rect.left,
+        yPosition: rect.top
       };
-      return result
+      return result;
     }, function(result) {
       console.log(result);
     }, QUERY_SELECTOR
   )
-  .run()
+  //.screenshot('./hoge.png')
+  .run();
