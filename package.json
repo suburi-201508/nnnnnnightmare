@@ -1,0 +1,22 @@
+{
+  "name": "nnnnnnightmare",
+  "version": "0.0.1",
+  "description": "get width and height of specified tag by query selector",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/suburi-201508/nnnnnnightmare.git"
+  },
+  "author": "JumpeiArashi",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/suburi-201508/nnnnnnightmare/issues"
+  },
+  "homepage": "https://github.com/suburi-201508/nnnnnnightmare",
+  "dependencies": {
+    "nightmare": "^1.8.2"
+  }
+}
